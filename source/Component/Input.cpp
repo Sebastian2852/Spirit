@@ -1,3 +1,5 @@
+#include "PCH.hpp"
+
 #include "Component/Input.hpp"
 #include "Component/FirstPersonCamera.hpp"
 #include "Component/RigidBody.hpp"

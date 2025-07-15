@@ -1,9 +1,7 @@
+#include "PCH.hpp"
 #include "Collider.hpp"
 
 #include "Utility/Serialise.hpp"
-
-#include "imgui.h"
-#include "glm/glm.hpp"
 
 namespace Component
 {

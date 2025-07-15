@@ -1,10 +1,10 @@
+#include "PCH.hpp"
+
 #include "ParticleEmitter.hpp"
 #include "Component/Texture.hpp"
 
 #include "System/AssetManager.hpp"
 #include "Utility/Utility.hpp"
-
-#include "imgui.h"
 
 namespace Component
 {

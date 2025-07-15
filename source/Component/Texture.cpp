@@ -1,10 +1,10 @@
+#include "PCH.hpp"
 #include "Texture.hpp"
+
 #include "System/AssetManager.hpp"
 
 #include "Utility/Logger.hpp"
 #include "Utility/File.hpp"
-
-#include "imgui.h"
 
 namespace Data
 {

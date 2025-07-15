@@ -1,3 +1,4 @@
+#include "PCH.hpp"
 #include "Terrain.hpp"
 
 #include "System/AssetManager.hpp"
@@ -8,10 +9,6 @@
 #include "Utility/Utility.hpp"
 
 #include "OpenGL/DebugRenderer.hpp"
-
-#include "imgui.h"
-
-#include <bitset>
 
 namespace Component
 {

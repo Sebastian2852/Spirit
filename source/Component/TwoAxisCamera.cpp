@@ -1,10 +1,8 @@
+#include "PCH.hpp"
 #include "TwoAxisCamera.hpp"
 #include "Platform/Input.hpp"
 #include "Utility/Logger.hpp"
 
-#include "glm/gtc/matrix_transform.hpp"
-#include "glm/gtx/rotate_vector.hpp"
-#include "imgui.h"
 
 namespace Component
 {

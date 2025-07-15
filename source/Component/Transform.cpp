@@ -1,10 +1,9 @@
+#include "PCH.hpp"
 #include "Transform.hpp"
+
 #include "Utility/Utility.hpp"
 #include "Utility/Serialise.hpp"
 
-#include "imgui.h"
-#include "glm/gtx/euler_angles.hpp"
-#include "glm/gtx/matrix_decompose.hpp"
 
 namespace Component
 {

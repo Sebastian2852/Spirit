@@ -112,6 +112,8 @@ target_compile_options(ECS PRIVATE ${WARNING_COMPILE_FLAGS})
 
 # Component -------------------------------------------------------------------------------------------------------------------------------
 add_library(Component
+source/Component/PCH.cpp
+source/Component/PCH.hpp
 source/Component/FirstPersonCamera.cpp
 source/Component/FirstPersonCamera.hpp
 source/Component/Collider.cpp
@@ -154,6 +156,14 @@ PRIVATE ImGui
 PRIVATE STB
 )
 target_compile_options(Component PRIVATE ${WARNING_COMPILE_FLAGS})
+
+set(PCH_HEADER "source/Component/PCH.hpp")
+if(MSVC)
+    target_precompile_headers(Component PRIVATE ${PCH_HEADER})
+elseif(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    target_compile_options(Component PRIVATE -include ${PCH_HEADER})
+endif()
+
 # Component end ---------------------------------------------------------------------------------------------------------------------------
 
 # System ----------------------------------------------------------------------------------------------------------------------------------

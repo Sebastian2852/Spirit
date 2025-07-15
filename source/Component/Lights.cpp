@@ -1,10 +1,11 @@
+#include "PCH.hpp"
+
 #include "Lights.hpp"
 #include "Component/Transform.hpp"
 #include "Geometry/AABB.hpp"
 #include "Utility/Serialise.hpp"
 
 #include "glm/trigonometric.hpp"
-#include "imgui.h"
 
 namespace Component
 {
